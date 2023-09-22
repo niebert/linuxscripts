@@ -1,8 +1,24 @@
-linuxscripts
+Scripts for Linux (scripts4linux)
 ============
+Script collection for linux forked from [ggeorgovassilis/linuxscripts](https://github.com/ggeorgovassilis/linuxscripts)
 
-Script collection for linux
+## Install Scripts
+Installation of application or services from the Linux Shell is transparent and you can see every single step and analyze and debug the installation procedure. Install scripts aggregate those steps with a shell scripts that can be found in the subdirectory `install/`. 
 
+### Files and Folders for Install Scripts 
+Install scripts are organized by application name e.g. `install/kdeconnect` for the application KDE connect. Installation commands vary in general depending on Linux distro, so it necessary to adapt the scripts to the Linux distribution and sometimes even to the version. Therefore the script contains a variable name that contains distro names and version on which it was tested. 
+
+### Naming of Scripts
+The filename should contain the base name of the application (e.g. `kdeconnect`) and the distro for which the install script created and tested separated by a `4` followed by the linux distro name e.g. `kdeconnect4ubuntu.sh`). If the installation is more complex and even dependent on the version of the distro you can add the version number of the distro to filename of the install script is depending on the version on which you tested the installation script.
+ 
+### Create new scripts for other Linux Distros
+If you want to test the script for a newer version it is recommended to open the script and call the script command by command and if everything runs through smoothly you might want to add a new distro and version as install script and create a Pull Request to this repository.
+
+### List of Install Script
+The following list of install scripts are available:
+
+#### KDE Connect
+[KDE connect](https://kdeconnect.kde.org/) is often pre-installed on you linux distro but a port of your firewall must be opened for a mobile phone desktop linux communication and file exchange. The name `kdeconnect` contains `KDE` but the application can be installed also on KDE desktop environments.
 
 ## powersave
 
